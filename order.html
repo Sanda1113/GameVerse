@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse - Order</title>
+  <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">GameVerse</div>
+  </div>
+  <!-- Desktop Navigation Bar -->
+  <div class="navbar-desktop">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <div>
+                    <span>Popular</span>
+                    <a href="top.html">Top Sellers</a>
+                    <a href="most.html">Most Played</a>
+                </div>
+                <div>
+                    <span>New</span>
+                    <a href="new.html">New Releases</a>
+                    <a href="upcoming.html">Upcoming Releases</a>
+                </div>
+            </div>
+        </div>
+        <a href="games.html">Games</a>
+        <a href="store.html">Consoles & Gaming Peripherals</a>
+        <a href="about.html">About Us</a>
+        <a href="support.html">Support</a>
+    </div>
+</div>
+
+<!-- Mobile Navigation Bar -->
+<div class="navbar-mobile">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <div>
+                    <span>Popular</span>
+                    <a href="top.html">Top Sellers</a>
+                    <a href="most.html">Most Played</a>
+                </div>
+                <div>
+                    <span>New</span>
+                    <a href="new.html">New Releases</a>
+                    <a href="upcoming.html">Upcoming Releases</a>
+                </div>
+            </div>
+        </div>
+        <a href="games.html">Games</a>
+        <a href="store.html">Store</a>
+        <a href="about.html">About Us</a>
+        <a href="support.html">Support</a>
+    </div>
+</div>
+  <main class="container">
+    <h1>Review Your Order</h1>
+    <table id="order-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Quantity</td>
+          <td id="totalquantity">0</td>
+        </tr>
+        <tr>
+          <td colspan="3">Total Amount</td>
+          <td id="totalamount">LKR. 0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Enter Your Details</h2>
+    <form id="order-form">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" required>
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" required></textarea>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" required>
+        <option value="" disabled selected>Select Payment Method</option>
+        <option value="credit_card">Credit Card/Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cash_on_delivery">Cash on Delivery</option>
+      </select>
+
+      <!-- Credit Card Details -->
+    <div id="creditCardDetails" style="display: none; margin-top: 15px;">
+      <label for="cardName">Card Holder's Name:</label>
+      <input type="text" id="cardName">
+
+      <label for="cardNumber">Card Number (16 digits):</label>
+      <input type="text" id="cardNumber" maxlength="16">
+
+      <label for="cardAddress">Billing Address:</label>
+      <input type="text" id="cardAddress">
+
+      <label for="cardExpiry">Valid Thru (MM/YY):</label>
+      <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+
+      <label for="cardCVC">CVC:</label>
+      <input type="text" id="cardCVC" maxlength="3">
+    </div>
+
+    <!-- Custom Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+        <button id="popup-ok">OK</button>
+      </div>
+    </div>
+
+      <button type="submit" id="pay">Pay Now</button>
+    </form>
+  </main>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">
+        <div class="footer-logo-text">GameVerse</div><br>
+        <div class="footer-contact">
+            <p>Contact: +94 70 123 0456</p><br>
+            <p>Main Branch's Address: 123 Sanda Street, Colombo 07, Sri Lanka</p><br><br><br><br><br><br>
+            <p>&copy; 2024 GameVerse. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="top.html">Top Sellers</a>
+        <a href="most.html">Most Played</a>
+        <a href="new.html">New Releases</a>
+        <a href="upcoming.html">Upcoming Releases</a>
+        <a href="games.html">Games</a>
+        <a href="store.html">Consoles & Gaming Peripherals</a>
+        <a href="about.html">About Us</a>
+        <a href="support.html">Support</a>
+        <a href="shop.html">Shop</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/"><img src="Images/fb.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="Images/ig.jpg" alt="Instagram"></a>
+        <a href="https://x.com/?lang=en&mx=2"><img src="Imagestwo/x.png" alt="Twitter"></a>
+        <a href="https://discord.com/"><img src="Images/discord.jpg" alt="Discord"></a>
+    </div>
+</div>
+  <script src="scripts/order.js" defer></script>
+</body>
+</html>

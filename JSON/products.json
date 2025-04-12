@@ -1,0 +1,242 @@
+[
+  {
+    "id": "intel-i5-12600k",              
+    "name": "Intel Core I5-12600K",
+    "price": 109000,
+    "image": "imageshop/Intel_Core_i5-12600K.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Product Collection: 12th Gen Intel Core i5</li><li>Code Name: Alder Lake</li><li>Processor Number: i5-12600K</li><li>Status: Launched</li><li>Launch Date: Q4'21</li><li>Lithography: Intel 7</li><li>Use Conditions: PC/Client/Tablet</li><li>Total Cores: 10 (6P + 4E)</li><li>Total Threads: 16</li><li>Max Turbo Frequency: 4.90 GHz</li><li>Base Frequency: 3.70 GHz</li><li>Cache: 20 MB Intel\u00ae Smart Cache</li><li>Processor Base Power: 125 W</li><li>Memory Support: DDR5 4800 MT/s, DDR4 3200 MT/s</li><li>Max Memory Size: 128 GB</li><li>Max Memory Channels: 2</li></ul>"
+  },
+  {
+    "id": "amd-ryzen-7-5800x",           
+    "name": "AMD Ryzen 7 5800X",
+    "price": 70000,
+    "image": "imageshop/AMD_Ryzen_7_5800X.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Architecture: Zen 3</li><li>Platform: Desktop</li><li>CPU Cores: 8</li><li>Threads: 16</li><li>Base Clock: 3.4 GHz</li><li>Max Boost Clock: Up to 4.7 GHz</li><li>Total L2 Cache: 4 MB</li><li>Total L3 Cache: 32 MB</li><li>CMOS: TSMC 7nm FinFET</li><li>Socket: AM4</li><li>PCIe Version: PCIe 4.0</li><li>Max Operating Temp: 90C</li><li>Default TDP: 105W</li><li>Supported Memory: DDR4 up to 3200MHz</li><li>Max Memory Size: 128 GB</li><li>Unlocked for Overclocking: Yes</li><li>Integrated Graphics: No (Discrete GPU Required)</li></ul>"
+  },
+  {
+    "id": "intel-core-ultra-9",
+    "name": "Intel Core Ultra 9 285K",
+    "price": 960000,
+    "image": "imageshop/ultrai9.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Generation: Meteor Lake</li><li>Cores: 16 (8P + 8E)</li><li>Threads: 24</li><li>Base Clock: 3.9 GHz</li><li>Turbo Clock: Up to 5.4 GHz</li><li>Socket: LGA1851</li><li>Cache: 36MB Smart Cache</li><li>Graphics: Intel Arc GPU</li><li>Fabrication: Intel 4</li><li>TDP: 125W</li><li>Memory Support: DDR5 5600 MT/s, LPDDR5x</li><li>Max Memory Size: 192 GB</li><li>PCIe: 5.0, 4.0</li><li>AI Acceleration: Intel AI Boost</li></ul>"
+  },
+  {
+    "id": "amd-ryzen-7-9700x",
+    "name": "AMD Ryzen 7 9700X",
+    "price": 125000,
+    "image": "imageshop/AMD_RYZEN77.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Platform: Desktop</li><li>Product Family: AMD Ryzen Processors</li><li>Product Line: AMD Ryzen 7 7000 Series</li><li>Number of CPU Cores: 8</li><li>Number of Threads: 16</li><li>Max. Boost Clock: Up to 5.4GHz</li><li>Base Clock: 4.5GHz</li><li>L1 Cache: 512KB</li><li>L2 Cache: 8MB</li><li>L3 Cache: 32MB</li><li>Default TDP: 105W</li><li>Processor Technology: TSMC 5nm FinFET</li><li>CPU Socket: AM5</li><li>Unlocked for Overclocking: Yes</li></ul>"
+  },
+  {
+    "id": "amd-ryzen-7-7700x",
+    "name": "AMD Ryzen 7 7700X",
+    "price": 106000,
+    "image": "imageshop/AMD_Ryzen_7.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Platform: Desktop</li><li>Product Family: AMD Ryzen Processors</li><li>Product Line: AMD Ryzen 7 7000 Series</li><li>Number of CPU Cores: 8</li><li>Number of Threads: 16</li><li>Max. Boost Clock: Up to 5.4GHz</li><li>Base Clock: 4.5GHz</li><li>L1 Cache: 512KB</li><li>L2 Cache: 8MB</li><li>L3 Cache: 32MB</li><li>Default TDP: 105W</li><li>Processor Technology: TSMC 5nm FinFET</li><li>CPU Socket: AM5</li><li>Unlocked for Overclocking: Yes</li></ul>"
+  },
+  {
+    "id": "intel-i9-13900k",
+    "name": "Intel Core I9 13900K",
+    "price": 180000,
+    "image": "imageshop/i9.webp",
+    "category": "Category: Processor",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Architecture: Zen 3</li><li>Platform: Desktop</li><li>CPU Cores: 8</li><li>Threads: 16</li><li>Base Clock: 3.4 GHz</li><li>Max Boost Clock: Up to 4.7 GHz</li><li>Total L2 Cache: 4 MB</li><li>Total L3 Cache: 32 MB</li><li>CMOS: TSMC 7nm FinFET</li><li>Socket: AM4</li><li>PCIe Version: PCIe 4.0</li><li>Max Operating Temp: 90C</li><li>Default TDP: 105W</li><li>Supported Memory: DDR4 up to 3200MHz</li><li>Max Memory Size: 128 GB</li><li>Unlocked for Overclocking: Yes</li><li>Integrated Graphics: No (Discrete GPU Required)</li></ul>"
+  },
+  {
+    "id": "nvidia-rtx-3060",
+    "name": "NVIDIA RTX 3060",
+    "price": 200000,
+    "image": "imageshop/NVIDIARTX3060.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Architecture: Ampere</li><li>CUDA Cores: 3584</li><li>Base Clock: 1320 MHz</li><li>Boost Clock: 1777 MHz</li><li>Memory: 12 GB GDDR6</li><li>Memory Interface Width: 192-bit</li><li>Memory Speed: 15 Gbps</li><li>Ray Tracing Cores: 2nd Generation</li><li>Tensor Cores: 3rd Generation</li><li>Max Digital Resolution: 7680x4320</li><li>PCI Express: 4.0</li><li>Outputs: 3x DisplayPort 1.4a, 1x HDMI 2.1</li><li>Multi Monitor Support: Yes</li><li>Power Consumption: 170W</li><li>Recommended PSU: 550W</li><li>Power Connector: 1x 8-pin</li></ul>"
+  },
+  {
+    "id": "nvidia-rtx-4070",
+    "name": "NVIDIA RTX 4070",
+    "price": 350000,
+    "image": "imageshop/NVIDIARTX4070.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Architecture: Ada Lovelace</li><li>CUDA Cores: 5888</li><li>Base Clock: 1920 MHz</li><li>Boost Clock: 2475 MHz</li><li>Memory: 12 GB GDDR6X</li><li>Memory Interface Width: 192-bit</li><li>Memory Speed: 21 Gbps</li><li>Ray Tracing Cores: 3rd Generation</li><li>Tensor Cores: 4th Generation</li><li>Max Digital Resolution: 7680x4320</li><li>PCI Express: 4.0</li><li>Outputs: 3x DisplayPort 1.4a, 1x HDMI 2.1</li><li>Multi Monitor Support: Yes</li><li>Power Consumption: 200W</li><li>Recommended PSU: 600W</li></ul>"
+  },
+  {
+    "id": "nvidia-rtx-3050",
+    "name": "NVIDIA RTX 3050",
+    "price": 89500,
+    "image": "imageshop/NVIDIARTX3050.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Architecture: Ampere</li><li>CUDA Cores: 2560</li><li>Base Clock: 1552 MHz</li><li>Boost Clock: 1777 MHz</li><li>Memory: 8 GB GDDR6</li><li>Memory Interface Width: 128-bit</li><li>Memory Speed: 14 Gbps</li><li>Ray Tracing Cores: 2nd Generation</li><li>Tensor Cores: 3rd Generation</li><li>Max Digital Resolution: 7680x4320</li><li>PCI Express: 4.0</li><li>Outputs: 1x HDMI 2.1, 3x DisplayPort 1.4a</li><li>Multi Monitor Support: Yes</li><li>Power Consumption: 130W</li><li>Recommended PSU: 550W</li></ul>"
+  },
+  {
+    "id": "msi-rtx-5070-ti",
+    "name": "MSI RTX 5070 Ti 16G",
+    "price": 345000,
+    "image": "imageshop/MSI_RTX_5070_Ti_16G_Ventus_3X_OC_GDDR7.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>GPU Model: NVIDIA GeForce RTX 5070 Ti</li><li>Architecture: Ada Lovelace</li><li>CUDA Cores: 7680</li><li>Core Clock: 2310 MHz</li><li>Boost Clock: Up to 2610 MHz</li><li>Video Memory: 16GB GDDR7</li><li>Memory Interface: 256-bit</li><li>Memory Speed: 24 Gbps</li><li>Outputs: 1x HDMI 2.1a, 3x DisplayPort 1.4a</li><li>Max Digital Resolution: 7680 x 4320</li><li>Multi-Monitor Support: Yes (up to 4)</li><li>Power Consumption: ~285W</li><li>Recommended PSU: 750W</li><li>Power Connectors: 1x 16-pin (12VHPWR)</li><li>PCI Express Interface: PCIe 4.0 x16</li></ul>"
+  },
+  {
+    "id": "pny-rtx-3050",
+    "name": "PNY Geforce RTX 3050",
+    "price": 74000,
+    "image": "imageshop/PNY_Geforce_RTX_3050.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>GPU Model: NVIDIA GeForce RTX 3050</li><li>Architecture: Ampere</li><li>CUDA Cores: 2560</li><li>Base Clock: 1552 MHz</li><li>Boost Clock: 1777 MHz</li><li>Video Memory: 8GB GDDR6</li><li>Memory Interface: 128-bit</li><li>Memory Speed: 14 Gbps</li><li>Outputs: 1x HDMI 2.1, 3x DisplayPort 1.4a</li><li>Max Digital Resolution: 7680 x 4320</li><li>Power Consumption: ~130W</li><li>Recommended PSU: 550W</li><li>Power Connectors: 1x 8-pin</li><li>PCI Express Interface: PCIe 4.0 x16</li><li>DirectX Support: 12 Ultimate</li><li>Ray Tracing Cores: 2nd Gen</li></ul>"
+  },
+  {
+    "id": "asus-rog-rtx-5090",
+    "name": "ASUS ROG RTX 5090",
+    "price": 1499000,
+    "image": "imageshop/ASUS_ROG_RTX_5090.webp",
+    "category": "Category: Graphic Card",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>GPU Model: NVIDIA GeForce RTX 5090</li><li>Architecture: Ada Lovelace (Next-gen)</li><li>CUDA Cores: 18176 (expected)</li><li>Base Clock: 2.2 GHz (approx.)</li><li>Boost Clock: 2.8 GHz (approx.)</li><li>Video Memory: 24GB GDDR7</li><li>Memory Interface: 384-bit</li><li>Memory Speed: 28 Gbps (GDDR7)</li><li>Outputs: 1x HDMI 2.1a, 3x DisplayPort 2.1</li><li>Max Digital Resolution: 8K @ 60Hz</li><li>Power Consumption: ~450W</li><li>Recommended PSU: 1000W</li><li>Power Connectors: 1x 16-pin (12VHPWR)</li><li>PCI Express Interface: PCIe 5.0 x16</li><li>DirectX Support: 12 Ultimate</li></ul>"
+  },
+  {
+    "id": "msi-b760",
+    "name": "MSI B760 Gaming Plus WIFI DDR5",
+    "price": 70000,
+    "image": "imageshop/MSI_B760_Gaming_Plus_WIFI_DDR5.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: Intel B760</li><li>CPU Support: 12th/13th Gen Intel Core, Pentium Gold, Celeron</li><li>Socket: LGA1700</li><li>Memory Support: 4 x DDR5 up to 7200+ MHz (OC)</li><li>Max Memory: 192GB</li><li>PCIe Slots: 1 x PCIe 4.0 x16, 2 x PCIe 3.0 x1</li><li>Storage: 2 x M.2 Gen4 x4, 4 x SATA 6Gb/s</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, USB 2.0</li><li>Audio: Realtek ALC897 7.1 Channel HD Audio</li><li>LAN: Realtek 2.5G LAN</li><li>Wireless: Intel Wi-Fi 6 & Bluetooth 5.2</li><li>Form Factor: ATX</li></ul>"
+  },
+  {
+    "id": "asus-tuf-z890",
+    "name": "Asus Tuf Z890-Pro Wifi DDR5",
+    "price": 144000,
+    "image": "imageshop/Asus_Tuf_Z890-Pro_Wifi_DDR.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: Intel Z890</li><li>CPU Support: 14th/13th/12th Gen Intel Core, Pentium Gold, Celeron</li><li>Socket: LGA1700</li><li>Memory Support: 4 x DDR5 up to 8000+ MHz (OC)</li><li>Max Memory: 192GB</li><li>PCIe Slots: 1 x PCIe 5.0 x16, 1 x PCIe 4.0 x16, 2 x PCIe 4.0 x1</li><li>Storage: 3 x M.2 (PCIe 4.0 x4), 4 x SATA 6Gb/s</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, USB 2.0</li><li>Audio: Realtek S1220A 7.1 Surround Sound High Definition Audio CODEC</li><li>LAN: Realtek 2.5G Ethernet</li><li>Wireless: Wi-Fi 6E & Bluetooth 5.3</li><li>Form Factor: ATX</li></ul>"
+  },
+  {
+    "id": "gigabyte-b650m",
+    "name": "Gigabyte B650M Gaming Wifi DDR5",
+    "price": 55000,
+    "image": "imageshop/Gigabyte_B650M_Gaming_Wifi_DDR5.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: AMD B650</li><li>CPU Support: AMD Ryzen 7000 Series Processors</li><li>Socket: AM5</li><li>Memory Support: 4 x DDR5 DIMM slots up to 8000 MHz (OC)</li><li>Max Memory: 192GB</li><li>PCIe Slots: 1 x PCIe 4.0 x16, 1 x PCIe 3.0 x1</li><li>Storage: 2 x M.2 (PCIe 4.0 x4), 4 x SATA 6Gb/s</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, USB 2.0</li><li>Audio: Realtek ALC897 Codec</li><li>LAN: Realtek 2.5GbE LAN</li><li>Wireless: Wi-Fi 6E & Bluetooth 5.3</li></ul>"
+  },
+  {
+    "id": "msi-z790-carbon",
+    "name": "MSI MPG Z790 CARBON WIFI DDR5",
+    "price": 173000,
+    "image": "imageshop/MSI_MPG_Z790_CARBON_WIFI_DDR5.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: Intel Z790</li><li>CPU Support: 12th, 13th & 14th Gen Intel Core Processors</li><li>Socket: LGA 1700</li><li>Memory Support: 4 x DDR5 DIMM slots up to 7800 MHz (OC)</li><li>Max Memory: 192GB</li><li>PCIe Slots: 1 x PCIe 5.0 x16, 1 x PCIe 4.0 x4, 2 x PCIe 3.0 x1</li><li>Storage: 5 x M.2 (PCIe 4.0/Gen4 x4), 6 x SATA 6Gb/s</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, Gen 1, USB 2.0</li><li>Audio: Realtek ALC4080 Codec + Audio Boost 5</li><li>LAN: Intel 2.5GbE LAN</li><li>Wireless: Intel Wi-Fi 6E & Bluetooth 5.3</li></ul>"
+  },
+  {
+    "id": "asrock-fm2a68m",
+    "name": "Asrock FM2A68M-DG3 DDR3",
+    "price": 18000,
+    "image": "imageshop/Asrock_FM2A68M-DG3_DDR3.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: Intel Z790</li><li>CPU Support: 12th, 13th & 14th Gen Intel Core Processors</li><li>Socket: LGA 1700</li><li>Memory Support: 4 x DDR5 DIMM slots up to 7800 MHz (OC)</li><li>Max Memory: 192GB</li><li>PCIe Slots: 1 x PCIe 5.0 x16, 1 x PCIe 4.0 x4, 2 x PCIe 3.0 x1</li><li>Storage: 5 x M.2 (PCIe 4.0/Gen4 x4), 6 x SATA 6Gb/s</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, Gen 1, USB 2.0</li><li>Audio: Realtek ALC4080 Codec + Audio Boost 5</li><li>LAN: Intel 2.5GbE LAN</li><li>Wireless: Intel Wi-Fi 6E & Bluetooth 5.3</li></ul>"
+  },
+  {
+    "id": "asus-rog-strix-z790",
+    "name": "Asus Rog Strix Z790-E WIFI II DDR5",
+    "price": 450000,
+    "image": "imageshop/Asus_Rog_Strix_Z790-E_WIFI_II_DDR5.webp",
+    "category": "Category: Motherboard",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Chipset: Intel Z790</li><li>CPU Support: Intel 12th, 13th & 14th Gen Core, Pentium Gold, and Celeron processors</li><li>Socket: LGA 1700</li><li>Memory Support: 4 x DDR5 DIMM slots, up to 192GB</li><li>Memory Speed: Up to 7800MHz (OC)</li><li>Expansion Slots: 1 x PCIe 5.0 x16, 1 x PCIe 4.0 x16 (max x4 mode), 1 x PCIe 3.0 x1</li><li>Storage: 5 x M.2 slots (4 x PCIe 4.0 x4, 1 x PCIe 5.0 x4), 4 x SATA 6Gb/s ports</li><li>USB Ports: USB 3.2 Gen 2x2 Type-C, USB 3.2 Gen 2, USB 3.2 Gen 1, USB 2.0</li><li>Networking: Intel 2.5Gb Ethernet, Intel Wi-Fi 7, Bluetooth 5.4</li></ul>"
+  },
+  {
+    "id": "addgame-spider-x5",
+    "name": "ADDGAME Spider X5 16GB DDR5 6400MT/s CL38 RGB DIMM With Heatsink",
+    "price": 25000,
+    "image": "imageshop/ADDGAME_Spider_X5_16GB.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR5</li><li>Capacity: 16GB (1 x 16GB)</li><li>Speed: 6400 MT/s</li><li>CAS Latency: CL38</li><li>Voltage: 1.35V</li><li>Form Factor: UDIMM</li><li>RGB Lighting: Yes, Addressable RGB</li><li>Heatsink: Aluminum heat spreader for improved thermal performance</li><li>Compatibility: Intel XMP 3.0 ready</li><li>Application: Desktop PCs</li><li>Module Height: Standard</li><li>Color: Black with RGB top bar</li></ul>"
+  },
+  {
+    "id": "addgame-spider-n4",
+    "name": "ADDGAME Spider N4 8GB DDR4 3200MT/s CL22 1.2V SO-DIMM 260Pin",
+    "price": 8000,
+    "image": "imageshop/ADDGAME_Spider_N4_8GB.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR4</li><li>Capacity: 8GB</li><li>Speed: 3200 MT/s</li><li>CAS Latency: CL22</li><li>Voltage: 1.2V</li><li>Form Factor: SO-DIMM</li><li>Pin Count: 260-Pin</li><li>Compatibility: Laptops and small form factor systems</li><li>Module Height: Standard</li><li>Application: Notebook PCs</li><li>Non-ECC: Yes</li><li>Buffered/Unbuffered: Unbuffered</li></ul>"
+  },
+  {
+    "id": "thermaltake-xg-d5",
+    "name": "Thermaltake Toughram XG RGB D5 16GB DDR5 5600MHZ C36",
+    "price": 45000,
+    "image": "imageshop/Thermaltake.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR5</li><li>Capacity: 16GB (1 x 16GB)</li><li>Speed: 5600 MHz</li><li>CAS Latency: CL36</li><li>Voltage: 1.25V</li><li>RGB Lighting: 16.8 million colors, 8 addressable LEDs</li><li>Compatibility: Intel 600 & 700 series, AMD 600 series</li><li>Heatsink: Aluminum with premium design</li><li>Module Type: DIMM</li><li>Pin Count: 288-Pin</li><li>XMP Support: Intel XMP 3.0 Ready</li><li>Operating Temperature: 0°C to 85°C</li></ul>"
+  },
+  {
+    "id": "corsair-vengeance",
+    "name": "Corsair Vengeance LPX 16GB 3200MHZ DDR4-Heat Spreader-Anodized Aluminum",
+    "price": 12000,
+    "image": "imageshop/Corsair_Desktop_Ram.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR4</li><li>Capacity: 16GB (1 x 16GB)</li><li>Speed: 3200 MHz</li><li>CAS Latency: CL16</li><li>Voltage: 1.35V</li><li>Heat Spreader: Anodized Aluminum</li><li>Form Factor: UDIMM</li><li>Compatibility: Intel 100/200/300/400/500 series, AMD 300/400/500 series</li><li>Pin Count: 288-Pin</li><li>XMP Support: Intel XMP 2.0 Ready</li><li>Height: 34mm (Low-profile)</li></ul>"
+  },
+  {
+    "id": "thermaltake-64gb",
+    "name": "THERMALTAKE TOUGHRAM RGB 64GB (2x32GB) DDR4 3600MHz C18",
+    "price": 100000,
+    "image": "imageshop/THERMALTAKE_64GB.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR4</li><li>Capacity: 64GB (2 x 32GB)</li><li>Speed: 3600 MHz</li><li>Latency: CL18</li><li>Voltage: 1.35V</li><li>RGB Lighting: Addressable RGB with 10 ultra-bright LEDs</li><li>Compatibility: Intel XMP 2.0 Ready, Intel and AMD platforms</li><li>Form Factor: DIMM</li><li>Pin Count: 288-Pin</li><li>Heat Spreader: Aluminum with premium finish</li><li>Color: Black</li></ul>"
+  },
+  {
+    "id": "thermaltake-16gb",
+    "name": "THERMALTAKE TOUGHRAM RGB 16GB (1x16GB) DDR4 3600MHz C18 RAM",
+    "price": 50000,
+    "image": "imageshop/16GB.webp",
+    "category": "Category: Memory (RAM)",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Memory Type: DDR4</li><li>Capacity: 16GB (1 x 16GB)</li><li>Speed: 3600 MHz</li><li>Latency: CL18</li><li>Voltage: 1.35V</li><li>RGB Lighting: Addressable RGB with 10 ultra-bright LEDs</li><li>Compatibility: Intel XMP 2.0 Ready, Compatible with Intel and AMD platforms</li><li>Form Factor: DIMM</li><li>Pin Count: 288-Pin</li><li>Heat Spreader: High-quality aluminum</li><li>Color: Black</li></ul>"
+  },
+  {
+    "id": "seagate-2tb",
+    "name": "Seagate 2TB 7200RPM Barracuda Desktop Hard Drive",
+    "price": 24000,
+    "image": "imageshop/Seagate_2TB.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: Seagate</li><li>Series: Barracuda</li><li>Capacity: 2TB</li><li>Spindle Speed: 7200 RPM</li><li>Cache: 256MB</li><li>Interface: SATA 6Gb/s</li><li>Form Factor: 3.5 inch</li><li>Average Data Transfer Rate: 190 MB/s</li><li>Drive Type: Internal Hard Drive</li><li>Usage: Desktop PC, All-in-One, Direct Attached Storage (DAS) devices</li><li>Advanced Format (AF): Yes</li><li>RoHS Compliant: Yes</li><li>Noise (Idle/Seek): 2.4/2.6 bels</li><li>Dimensions (LxWxH): 146.99mm x 101.6mm x 20.2mm</li><li>Weight: ~415g</li></ul>"
+  },
+  {
+    "id": "transcend-4tb",
+    "name": "WD Blue 2TB HDD Transcend 4TB External Hard Drive",
+    "price": 41000,
+    "image": "imageshop/Transcend_4TB.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: WD / Transcend</li><li>Models: WD Blue 2TB HDD / Transcend 4TB 25H3 External HDD</li><li>WD Blue 2TB Specs:</li><ul><li>Capacity: 2TB</li><li>Form Factor: 3.5 inch</li><li>Interface: SATA 6Gb/s</li><li>RPM: 5400</li><li>Cache: 256MB</li><li>Usage: Desktop PCs</li></ul><li>Transcend 4TB Specs:</li><ul><li>Capacity: 4TB</li><li>Interface: USB 3.1 Gen 1</li><li>Form Factor: 2.5 inch</li><li>Shock-resistant design with anti-shock rubber case</li></ul>"
+  },
+  {
+    "id": "kingston-128gb",
+    "name": "Kingston Data Traveler Exodia ONYX 128GB 3.2 Pen Drive",
+    "price": 5000,
+    "image": "imageshop/Kingston_128GB.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: Kingston</li><li>Model: DataTraveler Exodia Onyx</li><li>Capacity: 128GB</li><li>Interface: USB 3.2 Gen 1</li><li>Connector: USB Type-A</li><li>Dimensions: 67.4mm x 21.8mm x 10.0mm</li><li>Operating Temperature: 0°C to 60°C</li><li>Storage Temperature: -20°C to 85°C</li><li>Backward Compatibility: USB 2.0</li><li>Operating System Compatibility: Windows, macOS, Linux, Chrome OS</li><li>Cap Design: Cap-protected USB connector with loop for key rings</li><li>Color: Black</li><li>Weight: ~11g</li></ul>"
+  },
+  {
+    "id": "transcend-2tb",
+    "name": "Transcend 2TB USB 3.1 25H3 External Hard Drive",
+    "price": 30000,
+    "image": "imageshop/Transcend_2TB.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: Transcend</li><li>Model: StoreJet 25H3</li><li>Capacity: 2TB</li><li>Interface: USB 3.1 Gen 1 (backward compatible with USB 2.0)</li><li>Transfer Speed: Up to 5Gbps (USB 3.1)</li><li>Drive Type: 2.5-inch HDD</li><li>Dimensions: 129.5mm x 80.8mm x 16.1mm</li><li>Weight: 185g</li><li>Color: Purple/Blue (varies by version)</li><li>Enclosure: Triple-layer anti-shock protection with silicone outer shell</li><li>Operating Temperature: 5°C to 55°C</li><li>Power Supply: USB DC 5V</li><li>Compatibility: Windows, macOS, Linux</li><li>Software Support: Transcend Elite, RecoveRx</li></ul>"
+  },
+  {
+    "id": "ugreen-nvme",
+    "name": "Ugreen M.2/NVMe Enclosure With Type-c to Type-c Cable",
+    "price": 6000,
+    "image": "imageshop/Ugreen.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: Ugreen</li><li>Model: M.2 NVMe SSD Enclosure</li><li>Interface: USB 3.2 Gen 2 Type-C</li><li>Supported SSD Types: M.2 NVMe PCIe (M Key & B+M Key)</li><li>Size Compatibility: 2230 / 2242 / 2260 / 2280</li><li>Transfer Speed: Up to 10Gbps</li><li>Material: Aluminum Alloy for heat dissipation</li><li>Cooling: Built-in thermal pad and aluminum casing</li><li>Tool-Free Design: Yes</li><li>Compatible OS: Windows / macOS / Linux</li><li>Cable: Includes USB-C to USB-C and USB-C to USB-A</li><li>LED Indicator: Yes (shows power and activity)</li><li>Plug & Play: No driver required</li><li>Power Supply: USB bus-powered</li></ul>"
+  },
+  {
+    "id": "lexar-64gb",
+    "name": "Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive",
+    "price": 13450,
+    "image": "imageshop/Lexar.webp",
+    "category": "Category: Storage Device",
+    "details": "03 YEARS WARRANTY<br><br><strong>PRODUCT SPECIFICATIONS</strong><br><ul><li>Brand: Lexar</li><li>Model: JumpDrive Fingerprint F35</li><li>Capacity: 64GB</li><li>Interface: USB 3.0 (backward compatible with USB 2.0)</li><li>Fingerprint Recognition: Up to 10 fingerprint IDs</li><li>Read Speed: Up to 150MB/s</li><li>Encryption: 256-bit AES</li><li>Security Software: Lexar DataShield</li><li>OS Compatibility: Windows 7/8/10, macOS X+, Linux</li><li>Material: Metal and plastic construction</li><li>Design: Capless with fingerprint sensor</li><li>Dimensions: 20.5mm x 64.6mm x 7.8mm (approx.)</li><li>Weight: ~22g</li><li>Plug & Play: Yes, no drivers needed</li></ul>"
+  }
+]

@@ -1,0 +1,184 @@
+body {
+  background-color: #1a1f2b;
+  color: #c6d4df;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1a1f2b;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.image-section {
+  padding-left: 20px;
+}
+
+.image-section img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
+  background-color: #1a1f2b;
+  padding: 10px;
+}
+
+.info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+
+#productName {
+  font-size: 24px;
+  margin: 5px 0;
+  color: #66c0f4;
+}
+
+#productPrice {
+  font-size: 20px;
+  margin: 5px 0 10px;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 10px;
+  background-color: #66c0f4;
+  color: #171a21;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: black;
+  color: #66c0f4;
+}
+
+.product-details {
+  background-color: #0f141e;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 450px;
+}
+
+.product-details strong {
+  color: #66c0f4;
+}
+
+.product-details ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+#quantityWarning{
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+  .product-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-section,
+  .info-section {
+    padding: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
+
+/* Small devices (mobile phones) */
+@media (max-width: 576px) {
+  .image-section img {
+    max-width: 100%;
+  }
+
+  #productName {
+    font-size: 20px;
+  }
+
+  #productPrice {
+    font-size: 18px;
+  }
+
+  .buttons button {
+    font-size: 14px;
+  }
+
+  .product-details {
+    font-size: 13px;
+    max-height: 300px;
+  }
+}
+
+/* Very small / Foldables (Surface Duo, Galaxy Fold, iPhone Mini, etc.) */
+@media (max-width: 400px) {
+  .product-wrapper {
+    gap: 20px;
+  }
+
+  .buttons {
+    gap: 5px;
+  }
+
+  .buttons button {
+    padding: 8px;
+  }
+
+  .product-details {
+    font-size: 12px;
+    max-height: 250px;
+  }
+}
+
+/* Ultra-compact (iPhone SE, very small foldables) */
+@media (max-width: 360px) {
+  #productName {
+    font-size: 18px;
+  }
+
+  #productPrice {
+    font-size: 16px;
+  }
+
+  .product-details {
+    font-size: 11px;
+    max-height: 220px;
+  }
+
+  .buttons button {
+    font-size: 13px;
+    padding: 7px;
+  }
+} 

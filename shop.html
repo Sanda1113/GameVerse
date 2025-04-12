@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Shop</title>
+
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">GameVerse</div>
+            <button id="cartButton" class="cart-btn">Cart (0)</button>
+            <p id="cartMessage" class="cart-message">Please add products to the cart.</p>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="cartPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" aria-label="Close popup">&times;</button>
+                <h3>Product Details</h3>
+                <p><strong>Unit Price:</strong> LKR <span id="unitPrice"></span></p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <p id="quantityWarning">Maximum 20 units per item allowed.</p>
+                <p><strong>Total Price:</strong> LKR <span id="totalPrice"></span></p>
+                <div class="popup-buttons">
+                    <button id="confirmPurchase">Confirm</button>
+                    <button id="cancelPurchase">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Bar -->
+    <div class="navbar-desktop">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <div>
+                        <span>Popular</span>
+                        <a href="top.html">Top Sellers</a>
+                        <a href="most.html">Most Played</a>
+                    </div>
+                    <div>
+                        <span>New</span>
+                        <a href="new.html">New Releases</a>
+                        <a href="upcoming.html">Upcoming Releases</a>
+                    </div>
+                </div>
+            </div>
+            <a href="games.html">Games</a>
+            <a href="store.html">Consoles & Gaming Peripherals</a>
+            <a href="about.html">About Us</a>
+            <a href="support.html">Support</a>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <div class="navbar-mobile">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <div>
+                        <span>Popular</span>
+                        <a href="top.html">Top Sellers</a>
+                        <a href="most.html">Most Played</a>
+                    </div>
+                    <div>
+                        <span>New</span>
+                        <a href="new.html">New Releases</a>
+                        <a href="upcoming.html">Upcoming Releases</a>
+                    </div>
+                </div>
+            </div>
+            <a href="games.html">Games</a>
+            <a href="store.html">Store</a>
+            <a href="about.html">About Us</a>
+            <a href="support.html">Support</a>
+        </div>
+    </div>
+<main>
+        <!-- Processors -->
+        <h2 id="producttopic1">Processors</h2>
+        <div class="grid">
+            <div class="productcard">
+                <img src="imageshop/Intel_Core_i5-12600K.webp" alt="Intel Core i5-12600K">
+                <h3>Intel Core I5-12600K</h3>
+                <p>Price: LKR. 109,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Intel Core i5-12600K" data-price="109000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=intel-i5-12600k">View Product</a>
+                </div>                  
+            </div>
+            <div class="productcard">
+                <img src="imageshop/AMD_Ryzen_7_5800X.webp" alt="AMD Ryzen 7 5800X">
+                <h3>AMD Ryzen 7 5800X</h3>
+                <p>Price: LKR. 70,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="AMD Ryzen 7 5800X" data-price="70000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=amd-ryzen-7-5800x">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/ultrai9.webp" alt="Intel Core Ultra 9 285K">
+                <h3>Intel Core Ultra 9 285K</h3>
+                <p>Price: LKR. 960,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Intel Core Ultra 9 285" data-price="960000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=intel-core-ultra-9">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/AMD_RYZEN77.webp" alt="AMD Ryzen 7 9700X">
+                <h3>AMD Ryzen 7 9700X</h3>
+                <p>Price: LKR. 125,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="AMD Ryzen 7 9700X" data-price="125000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=amd-ryzen-7-9700x">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/AMD_Ryzen_7.webp" alt="AMD Ryzen 7 7700X">
+                <h3>AMD Ryzen 7 7700X</h3>
+                <p>Price: LKR. 106,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="AMD Ryzen 7 7700X" data-price="106000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=amd-ryzen-7-7700x">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/i9.webp" alt="Intel Core i9-13900K">
+                <h3>Intel Core I9 13900K</h3>
+                <p>Price: LKR. 180,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Intel Core i9-13900K" data-price="180000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=intel-i9-13900k">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graphic Cards -->
+        <h2 id="producttopic2">Graphic Cards</h2>
+        <div class="grid">
+            <div class="productcard">
+                <img src="imageshop/NVIDIARTX3060.webp" alt="NVIDIA RTX 3060">
+                <h3>NVIDIA RTX 3060</h3>
+                <p>Price: LKR. 200,000.00</p>
+                <div class="productBtns">             
+                    <button class="addtocart" data-name="NVIDIA RTX 3060" data-price="200000">Add to Cart</button>      
+                    <a class="viewproduct" href="product.html?id=nvidia-rtx-3060">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/NVIDIARTX4070.webp" alt="NVIDIA RTX 4070">
+                <h3>NVIDIA RTX 4070</h3>
+                <p>Price: LKR. 350,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="NVIDIA RTX 4070" data-price="350000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=nvidia-rtx-4070">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/NVIDIARTX3050.webp" alt="NVIDIA RTX 3050">
+                <h3>NVIDIA RTX 3050</h3>
+                <p>Price: LKR. 89,500.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="NVIDIA RTX 3050" data-price="89500">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=nvidia-rtx-3050">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/MSI_RTX_5070_Ti_16G_Ventus_3X_OC_GDDR7.webp" alt="MSI RTX 5070 Ti 16G">
+                <h3>MSI RTX 5070 Ti 16G</h3>
+                <p>Price: LKR. 345,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="MSI RTX 5070 Ti 16G" data-price="345000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=msi-rtx-5070-ti">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/PNY_Geforce_RTX_3050.webp" alt="PNY Geforce RTX 3050">
+                <h3>PNY Geforce RTX 3050</h3>
+                <p>Price: LKR. 74,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="PNY Geforce RTX 3050" data-price="74000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=pny-rtx-3050">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/ASUS_ROG_RTX_5090.webp" alt="ASUS ROG RTX 5090">
+                <h3>ASUS ROG RTX 5090</h3>
+                <p>Price: LKR. 1,499,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="ASUS ROG RTX 5090" data-price="1499000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=asus-rog-rtx-5090">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Motherboards -->
+        <h2 id="producttopic3">Motherboards</h2>
+        <div class="grid">
+            <div class="productcard">
+                <img src="imageshop/MSI_B760_Gaming_Plus_WIFI_DDR5.webp" alt="MSI B760 Gaming Plus WIFI DDR5">
+                <h3>MSI B760 Gaming Plus WIFI DDR5</h3>
+                <p>Price: LKR. 70,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="MSI B760 Gaming Plus WIFI DDR5" data-price="70000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=msi-b760">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Asus_Tuf_Z890-Pro_Wifi_DDR.webp" alt="Asus Tuf Z890-Pro Wifi DDR5">
+                <h3>Asus Tuf Z890-Pro Wifi DDR5</h3>
+                <p>Price: LKR. 144,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Asus Tuf Z890-Pro Wifi DDR5" data-price="144000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=asus-tuf-z890">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Gigabyte_B650M_Gaming_Wifi_DDR5.webp" alt="Gigabyte B650M Gaming Wifi DDR5">
+                <h3>Gigabyte B650M Gaming Wifi DDR5</h3>
+                <p>Price: LKR. 55,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Gigabyte B650M Gaming Wifi DDR5" data-price="55000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=gigabyte-b650m">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/MSI_MPG_Z790_CARBON_WIFI_DDR5.webp" alt="MSI MPG Z790 CARBON WIFI DDR5">
+                <h3>MSI MPG Z790 CARBON WIFI DDR5</h3>
+                <p>Price: LKR. 173,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="MSI MPG Z790 CARBON WIFI DDR5" data-price="173000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=msi-z790-carbon">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Asrock_FM2A68M-DG3_DDR3.webp" alt="Asrock FM2A68M-DG3 DDR3">
+                <h3>Asrock FM2A68M-DG3 DDR3</h3>
+                <p>Price: LKR. 18,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Asrock FM2A68M-DG3 DDR3" data-price="18000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=asrock-fm2a68m">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Asus_Rog_Strix_Z790-E_WIFI_II_DDR5.webp" alt="Asus Rog Strix Z790-E WIFI II DDR5">
+                <h3>Asus Rog Strix Z790-E WIFI II DDR5</h3>
+                <p>Price: LKR. 450,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Asus Rog Strix Z790-E WIFI II DDR5" data-price="450000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=asus-rog-strix-z790">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RAM -->
+        <h2 id="producttopic4">Memory (RAM)</h2>
+        <div class="grid">
+            <div class="productcard">
+                <img src="imageshop/ADDGAME_Spider_X5_16GB.webp" alt="ADDGAME Spider X5 16GB DDR5 6400MT/s CL38 RGB DIMM With Heatsink">
+                <h3>ADDGAME Spider X5 16GB DDR5 6400MT/s CL38 RGB DIMM With Heatsink</h3>
+                <p>Price: LKR. 25,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="ADDGAME Spider X5 16GB DDR5 6400MT/s CL38 RGB DIMM With Heatsink" data-price="25000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=addgame-spider-x5">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/ADDGAME_Spider_N4_8GB.webp" alt="ADDGAME Spider N4 8GB DDR4 3200MT/s CL22 1.2V SO-DIMM 260Pin">
+                <h3>ADDGAME Spider N4 8GB DDR4 3200MT/s CL22 1.2V SO-DIMM 260Pin</h3>
+                <p>Price: LKR. 8,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="ADDGAME Spider N4 8GB DDR4 3200MT/s CL22 1.2V SO-DIMM 260Pin" data-price="8000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=addgame-spider-n4">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Thermaltake.webp" alt="Thermaltake Toughram XG RGB D5 16GB DDR5 5600MHZ C36">
+                <h3>Thermaltake Toughram XG RGB D5 16GB DDR5 5600MHZ C36</h3>
+                <p>Price: LKR. 45,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Thermaltake Toughram XG RGB D5 16GB DDR5 5600MHZ C36" data-price="45000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=thermaltake-xg-d5">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Corsair_Desktop_Ram.webp" alt="Corsair Vengeance LPX 16GB 3200MHZ DDR4 Desktop Ram">
+                <h3>Corsair Vengeance LPX 16GB 3200MHZ DDR4-Heat Spreader-Anodized Aluminum</h3>
+                <p>Price: LKR. 12,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Corsair Vengeance LPX 16GB 3200MHZ DDR4-Heat Spreader-Anodized Aluminum" data-price="12000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=corsair-vengeance">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/THERMALTAKE_64GB.webp" alt="THERMALTAKE TOUGHRAM RGB 64GB (2x32GB) DDR4 3600MHz C18">
+                <h3>THERMALTAKE TOUGHRAM RGB 64GB (2x32GB) DDR4 3600MHz C18</h3>
+                <p>Price: LKR. 100,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="THERMALTAKE TOUGHRAM RGB 64GB (2x32GB) DDR4 3600MHz C18" data-price="100000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=thermaltake-64gb">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/16GB.webp" alt="THERMALTAKE TOUGHRAM RGB 16GB (1x16GB) DDR4 3600MHz C18">
+                <h3>THERMALTAKE TOUGHRAM RGB 16GB (1x16GB) DDR4 3600MHz C18 RAM</h3>
+                <p>Price: LKR. 50,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="THERMALTAKE TOUGHRAM RGB 16GB (1x16GB) DDR4 3600MHz C18" data-price="50000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=thermaltake-16gb">View Product</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Storage Devices -->
+        <h2 id="producttopic5">Storage Devices</h2>
+        <div class="grid">
+            <div class="productcard">
+                <img src="imageshop/Seagate_2TB.webp" alt="Seagate 2TB 7200RPM Barracuda Desktop Hard Drive">
+                <h3>Seagate 2TB 7200RPM Barracuda Desktop Hard Drive</h3>
+                <p>Price: LKR. 24,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Seagate 2TB 7200RPM Barracuda Desktop Hard Drive" data-price="24000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=seagate-2tb">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Transcend_4TB.webp" alt="Transcend 4TB 25H3 USB 3.1 External Hard Drive">
+                <h3>WD Blue 2TB HDD Transcend 4TB External Hard Drive</h3>
+                <p>Price: LKR. 41,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="WD Blue 2TB HDDTranscend 4TB External Hard Drive" data-price="41000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=transcend-4tb">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Kingston_128GB.webp" alt="Kingston Data Traveler Exodia ONYX 128GB 3.2 Pen Drive">
+                <h3>Kingston Data Traveler Exodia ONYX 128GB 3.2 Pen Drive</h3>
+                <p>Price: LKR. 5,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Kingston Data Traveler Exodia ONYX 128GB 3.2 Pen Drive" data-price="5000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=kingston-128gb">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Transcend_2TB.webp" alt="Transcend 2TB USB 3.1 25H3 External Hard Drive">
+                <h3>Transcend 2TB USB 3.1 25H3 External Hard Drive</h3>
+                <p>Price: LKR. 30,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Transcend 2TB USB 3.1 25H3 External Hard Drive" data-price="30000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=transcend-2tb">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Ugreen.webp" alt="Ugreen M.2/NVMe Enclosure With Type-c to Type-c Cable">
+                <h3>Ugreen M.2/NVMe Enclosure With Type-c to Type-c Cable</h3>
+                <p>Price: LKR. 6,000.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Ugreen M.2/NVMe Enclosure With Type-c to Type-c Cable" data-price="6000">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=ugreen-nvme">View Product</a>
+                </div>
+            </div>
+            <div class="productcard">
+                <img src="imageshop/Lexar.webp" alt="Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive">
+                <h3>Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive</h3>
+                <p>Price: LKR. 13,450.00</p>
+                <div class="productBtns">
+                    <button class="addtocart" data-name="Lexar 64GB JumpDrive Fingerprint F35USM 3.0 Flash Drive" data-price="13450">Add to Cart</button>
+                    <a class="viewproduct" href="product.html?id=lexar-64gb">View Product</a>
+                </div>
+            </div>
+        </div>
+</main>
+    <a href="shop.html" id="backtotop">Back to Top</a>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-logo">
+            <div class="footer-logo-text">GameVerse</div><br>
+            <div class="footer-contact">
+                <p>Contact: +94 70 123 0456</p>
+                <p>Main Branch's Address: 123 Sanda Street, Colombo 07, Sri Lanka</p>
+                <p>&copy; 2024 GameVerse. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="top.html">Top Sellers</a>
+            <a href="most.html">Most Played</a>
+            <a href="new.html">New Releases</a>
+            <a href="upcoming.html">Upcoming Releases</a>
+            <a href="games.html">Games</a>
+            <a href="store.html">Consoles & Gaming Peripherals</a>
+            <a href="about.html">About Us</a>
+            <a href="support.html">Support</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/"><img src="Images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="Images/ig.jpg" alt="Instagram"></a>
+            <a href="https://x.com/?lang=en&mx=2"><img src="Imagestwo/x.png" alt="Twitter"></a>
+            <a href="https://discord.com/"><img src="Images/discord.jpg" alt="Discord"></a>
+        </div>
+    </div>
+
+    <script src="scripts/shop.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,927 @@
+/* General Styles */
+body {
+    background-color: #1a1f2b;
+    color: #c6d4df;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scrollbar Styles for WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 14px; /* Width */
+    height: 12px; /* Height*/
+}
+
+/* Scrollbar Styles for Firefox */
+html {
+    scrollbar-color: #66c0f4 #1a1f2b; /* thumb and track color */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1f2b; /* Color of the scrollbar track */
+    border-radius: 20px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #66c0f4; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+    border: 3px solid #1a1f2b; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4fa8d3; /* Color of the thumb on hover */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Push logo left and buttons right */
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1f2b;
+    flex-wrap: wrap;
+  }
+  
+  /* Position buttons top right in desktop */
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+/* Logo */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #66c0f4;
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.sign-up-btn,
+.shopBtn {
+  display: inline-block;
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #66c0f4;
+  color: #171a21;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.sign-up-btn:hover, .shopBtn:hover {
+    background-color: #4fa8d3;
+}
+
+
+/* Desktop Navigation Bar */
+.navbar-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1f2b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-desktop .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-desktop a {
+    color: #c6d4df;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.navbar-desktop a:hover {
+    color: #66c0f4;
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1f2b;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: #c6d4df;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3c4450;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Headings */
+.dropdown-content div span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #66c0f4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Mobile Navigation Bar */
+.navbar-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #171a21;
+    padding: 8px 0;
+    z-index: 1000;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-mobile .nav-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    gap: 10px; /* Add some space between the links */
+    padding: 0 10px; /* Add padding to the sides */
+}
+
+.navbar-mobile a {
+    color: #c6d4df;
+    padding: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9px; /* Base font size for mobile */
+    white-space: nowrap;
+    flex: 1; /* Ensure equal spacing */
+    text-align: center; /* Center text within each link */
+    transition: color 0.3s ease;
+}
+
+.navbar-mobile a:hover {
+    color: #66c0f4;
+    text-decoration: underline;
+}
+
+/* Dropdown Styles for Mobile */
+.navbar-mobile .dropdown {
+    position: relative;
+}
+
+.navbar-mobile .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position dropdown above the link */
+    left: 50%; /* Center the dropdown */
+    transform: translateX(-50%); /* Center the dropdown */
+    background-color: #171a21; /* Match mobile navbar color */
+    min-width: 160px; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure it appears above the navbar */
+    border-radius: 8px;
+    padding: 8px; /* Add padding for better spacing */
+    max-width: 90vw; /* Ensure dropdown doesn't exceed viewport width */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar-mobile .dropdown-content a {
+    color: #c6d4df;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 9px; /* Match the font size of the navbar links */
+    white-space: nowrap;
+}
+
+.navbar-mobile .dropdown-content a:hover {
+    background-color: #3c4450;
+}
+
+.navbar-mobile .dropdown:focus-within .dropdown-content {
+    display: block; /* Show dropdown when focused */
+}
+
+.navbar-mobile .dropdown-divider {
+    border-bottom: 1px solid #3c4450;
+    margin: 5px 0;
+}
+
+/* Media Queries for Specific Screen Widths */
+@media (max-width: 853px) {
+    .navbar-mobile {
+        display: flex; /* Show the mobile navigation bar */
+    }
+
+    .navbar-desktop {
+        display: none; /* Hide the desktop navigation bar */
+    }
+
+    .navbar-mobile a {
+        font-size: 10px; /* Slightly larger font size for wider screens */
+        padding: 8px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .navbar-mobile {
+        display: none; /* Hide the mobile navigation bar */
+    }
+
+    .navbar-desktop {
+        display: flex; /* Show the desktop navigation bar */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-mobile {
+        display: none; /* Hide the mobile navigation bar */
+    }
+
+    .navbar-desktop {
+        display: flex; /* Show the desktop navigation bar */
+    }
+}
+
+@media (max-width: 540px) {
+    .navbar-mobile {
+        display: flex; /* Show the mobile navigation bar */
+    }
+
+    .navbar-desktop {
+        display: none; /* Hide the desktop navigation bar */
+    }
+
+    .navbar-mobile a {
+        font-size: 9px; /* Adjust font size for medium screens */
+        padding: 6px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar-mobile a {
+        font-size: 8px; /* Smaller font size for smaller screens */
+        padding: 5px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-mobile a {
+        font-size: 8px; /* Adjust font size for 375px screens */
+        padding: 4px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-mobile a {
+        font-size: 7px; /* Smallest font size for very small screens */
+        padding: 4px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 344px) {
+    .navbar-mobile a {
+        font-size: 7px; /* Adjust font size for 344px screens */
+        padding: 3px;
+    }
+
+    .navbar-mobile .dropdown-content a {
+        font-size: 7px;
+    }
+}
+@media (max-width: 375px) {
+    .headerBtn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-up-btn, .shopBtn {
+        width: 80%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 99.5%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-content-below {
+    text-align: center;
+    color: #ffffff;
+    background-color: #1a1f2b;
+    padding: 20px;
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.banner-content-below h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner-content-below p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.banner-content-below .banner-btn {
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    padding: 9px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Welcome note */
+.welcome h2 {
+    font-size: 24px;
+    color: #66c0f4;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.welcome p {
+    color: #ffffff;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Game Grid */
+.game-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #1b2838;
+    width: 200px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.game-card:hover img {
+    opacity: 0.15;
+}
+
+.game-card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #c6d4df;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.game-card:hover p {
+    opacity: 1;
+}
+
+.game-card::before {
+    content: attr(data-price);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.game-card:hover::before {
+    opacity: 10;
+}
+
+/* Remove underline from paragraphs inside game-card links */
+.game-card a {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.game-card a p {
+    text-decoration: none;
+}
+
+/*Banner Topic in Game page*/
+.topic h2{
+    color: #66c0f4;
+    text-align: left;
+    font-size: 28px;
+    margin-left: 20px;
+}
+/* Featured Section */
+.featured {
+    padding: 20px;
+    background-color: #1a1f2b;
+}
+
+.featured h2 {
+    color: #66c0f4;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.featured p {
+    text-decoration: none;
+}
+
+/* Holiday Sale Spotlight Section */
+.holiday-sale-spotlight {
+    padding: 20px;
+    background-color: #1a1f2b;
+    margin-top: 20px;
+}
+
+.holiday-sale-spotlight h2 {
+    color: #66c0f4;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Product Section */
+.products {
+    padding: 20px;
+    background-color: #1a1f2b;
+    margin-top: 20px;
+}
+
+.products h2 {
+    color: #66c0f4;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.large-product-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.large-product-card {
+    background-color: #1b2838;
+    width: 400px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.large-product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.large-product-card:hover img {
+    opacity: 0.3;
+}
+
+.large-product-content p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #c6d4df;
+    transition: opacity 0.3s ease;
+}
+
+.large-product-card:hover .large-product-content p {
+    opacity: 1;
+}
+
+.large-product-card::before {
+    content: attr(data-price);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.large-product-card:hover::before {
+    opacity: 1;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-to-top-btn {
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+    background-color: #3c4450;
+}
+
+/* Sign-Up Form */
+.sign-up-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1b2838;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    width: 90%;
+    max-width: 400px;
+}
+
+.sign-up-form:target {
+    display: block;
+}
+
+.sign-up-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #c6d4df;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.sign-up-form .close-btn:hover {
+    color: #66c0f4;
+}
+
+.sign-up-form h2 {
+    color: #66c0f4;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sign-up-form label {
+    display: block;
+    color: #c6d4df;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a3a4d;
+    color: #c6d4df;
+    font-size: 14px;
+}
+
+.sign-up-form input::placeholder {
+    color: #8f9ca7;
+}
+
+.sign-up-form button {
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-form button:hover {
+    background-color: #4fa8d3;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1b2838;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #66c0f4;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #c6d4df;
+    font-size: 14px;
+}
+
+.footer-links {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+    color: #c6d4df;
+    font-size: 16px;
+}
+
+.footer-links a {
+    display: block;
+    color: #ffffff;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #66c0f4;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Additional Media Queries */
+@media (max-width: 720px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        background-color: #171a21;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sign-up-btn {
+        margin-top: 10px;
+    }
+
+    .game-grid {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .game-card {
+        width: 180px;
+    }
+
+    .large-product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns per row for tablets and smaller screens */
+    }
+
+    .large-game-card {
+        width: 250px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo-text {
+        font-size: 24px;
+    }
+
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .large-product-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column per row for mobile devices */
+    }
+}
+
+/* Additional Media Queries for Specific Mobile Devices */
+@media (max-width: 390px) {
+    .navbar-mobile .nav-links {
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 8px; /* Slightly smaller font size */
+        padding: 6px; /* Reduce padding */
+    }
+
+    .game-card {
+        width: 160px; /* Adjust card width for smaller screens */
+    }
+
+    .large-game-card {
+        width: 220px; /* Adjust card width for smaller screens */
+    }
+
+    .footer-logo-text {
+        font-size: 22px; /* Slightly smaller logo text */
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-mobile .nav-links {
+        gap: 12px; /* Further reduce gap for 375px screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 7px; /* Smaller font size */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .game-card {
+        width: 150px; /* Adjust card width for 375px screens */
+    }
+
+    .large-game-card {
+        width: 200px; /* Adjust card width for 375px screens */
+    }
+
+    .footer-logo-text {
+        font-size: 20px; /* Smaller logo text */
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-mobile .nav-links {
+        gap: 10px; /* Minimal gap for 360px screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 6px; /* Smallest font size */
+        padding: 4px; /* Minimal padding */
+    }
+
+    .game-card {
+        width: 140px; /* Adjust card width for 360px screens */
+    }
+
+    .large-game-card {
+        width: 180px; /* Adjust card width for 360px screens */
+    }
+
+    .footer-logo-text {
+        font-size: 18px; /* Smallest logo text */
+    }
+}
+/* DESKTOP: Buttons to top-right horizontally */
+@media (min-width: 721px) {
+    .header {
+      position: relative;
+    }
+  
+    .header-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: row; /* Horizontal */
+      gap: 10px;
+    }
+  }
+  
+  /* MOBILE: Stack buttons vertically under logo */
+  @media (max-width: 720px) {
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-buttons {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+      align-items: center;
+      margin-top: 10px;
+      position: static; /* Remove absolute positioning on mobile */
+    }
+  
+    .sign-up-btn,
+    .shopBtn {
+      margin-bottom: 10px;
+      width: 130px; /* Optional: consistent width */
+    }
+  }
+  

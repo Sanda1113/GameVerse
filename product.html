@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">GameVerse</div>
+    <button id="cartButton" class="cart-btn">Cart (0)</button>
+    <p id="cartMessage" class="cart-message">Please add products to the cart.</p>
+</div>
+
+<!-- Popup Modal -->
+<div id="cartPopup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h3>Product Details</h3>
+      <p><strong>Unit Price:</strong> LKR <span id="unitPrice"></span></p>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1">
+      <p id="quantityWarning">Maximum 20 units per item allowed.</p>
+      <p><strong>Total Price:</strong> LKR <span id="totalPrice"></span></p>
+      <div class="popup-buttons">
+        <button id="confirmPurchase">Confirm</button>
+        <button id="cancelPurchase">Cancel</button>
+      </div>
+    </div>
+  </div>  
+<!-- Desktop Navigation Bar -->
+<div class="navbar-desktop">
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="#">Categories</a>
+        <div class="dropdown-content">
+            <div>
+                <span>Popular</span>
+                <a href="top.html">Top Sellers</a>
+                <a href="most.html">Most Played</a>
+            </div>
+            <div>
+                <span>New</span>
+                <a href="new.html">New Releases</a>
+                <a href="upcoming.html">Upcoming Releases</a>
+            </div>
+        </div>
+    </div>
+    <a href="games.html">Games</a>
+    <a href="store.html">Consoles & Gaming Peripherals</a>
+    <a href="about.html">About Us</a>
+    <a href="support.html">Support</a>
+</div>
+</div>
+
+<!-- Mobile Navigation Bar -->
+<div class="navbar-mobile">
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="#">Categories</a>
+        <div class="dropdown-content">
+            <div>
+                <span>Popular</span>
+                <a href="top.html">Top Sellers</a>
+                <a href="most.html">Most Played</a>
+            </div>
+            <div>
+                <span>New</span>
+                <a href="new.html">New Releases</a>
+                <a href="upcoming.html">Upcoming Releases</a>
+            </div>
+        </div>
+    </div>
+    <a href="games.html">Games</a>
+    <a href="store.html">Store</a>
+    <a href="about.html">About Us</a>
+    <a href="support.html">Support</a>
+</div>
+</div>
+<!-- product-->
+  <div class="product-wrapper">
+    <div class="image-section">
+      <img id="productImage" src="imageshop/loading.png" loading="lazy" alt="Product Image">
+    </div>
+    <div class="info-section">
+      <h1 id="productName">Loading product...</h1>
+      <p id="productPrice"></p>
+      <p id="category"></p>
+      <div class="buttons">
+        <button class="addtocart">Add to Cart</button>
+        <button class="buynow">Buy Now</button>
+      </div>
+      <div id="productDetails" class="product-details"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">
+        <div class="footer-logo-text">GameVerse</div><br>
+        <div class="footer-contact">
+            <p>Contact: +94 70 123 0456</p><br>
+            <p>Main Branch's Address: 123 Sanda Street, Colombo 07, Sri Lanka</p><br><br><br><br><br><br>
+            <p>&copy; 2024 GameVerse. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="top.html">Top Sellers</a>
+        <a href="most.html">Most Played</a>
+        <a href="new.html">New Releases</a>
+        <a href="upcoming.html">Upcoming Releases</a>
+        <a href="games.html">Games</a>
+        <a href="store.html">Consoles & Gaming Peripherals</a>
+        <a href="about.html">About Us</a>
+        <a href="support.html">Support</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/"><img src="Images/fb.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="Images/ig.jpg" alt="Instagram"></a>
+        <a href="https://x.com/?lang=en&mx=2"><img src="Imagestwo/x.png" alt="Twitter"></a>
+        <a href="https://discord.com/"><img src="Images/discord.jpg" alt="Discord"></a>
+    </div>
+</div>
+
+  <script src="scripts/product.js" defer></script>
+</body>
+</html>

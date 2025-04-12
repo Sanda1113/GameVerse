@@ -1,0 +1,555 @@
+/* General Styles */
+body {
+    background-color: #1a1f2b;
+    color: #c6d4df;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scrollbar Styles for WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 14px; /* Width of the scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar Styles for Firefox */
+html {
+    scrollbar-color: #66c0f4 #1a1f2b; /* thumb and track color */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1f2b; /* Color of the scrollbar track */
+    border-radius: 20px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #66c0f4; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+    border: 3px solid #1a1f2b; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4fa8d3; /* Color of the thumb on hover */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1f2b;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #66c0f4;
+    text-align: center;
+}
+
+.sign-up-btn {
+    background-color: #66c0f4;
+    color: #171a21;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Desktop Navigation Bar */
+.navbar-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1f2b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-desktop .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-desktop a {
+    color: #c6d4df;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.navbar-desktop a:hover {
+    color: #66c0f4;
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1f2b;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: #c6d4df;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3c4450;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Headings */
+.dropdown-content div span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #66c0f4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Mobile Navigation Bar */
+.navbar-mobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #171a21;
+    padding: 8px 0;
+    z-index: 1000;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-mobile .nav-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    gap: 15px; /* Add some space between the links */
+}
+
+.navbar-mobile a {
+    color: #c6d4df;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9px;
+    white-space: nowrap;
+    flex: 1; /* Ensure equal spacing */
+    max-width: 100px; /* Adjust as needed */
+    text-align: center; /* Center text within each link */
+}
+
+.navbar-mobile a:hover {
+    color: #66c0f4;
+    text-decoration: underline;
+}
+
+/* Dropdown Styles for Mobile */
+.navbar-mobile .dropdown {
+    position: relative;
+}
+
+.navbar-mobile .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position dropdown above the link */
+    left: 50%; /* Center the dropdown */
+    transform: translateX(-50%); /* Center the dropdown */
+    background-color: #171a21; /* Match mobile navbar color */
+    min-width: 180px; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Ensure it appears above the navbar */
+    border-radius: 8px;
+    padding: 10px; /* Add padding for better spacing */
+    max-width: 90vw; /* Ensure dropdown doesn't exceed viewport width */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.navbar-mobile .dropdown-content a {
+    color: #c6d4df;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.navbar-mobile .dropdown-content a:hover {
+    background-color: #3c4450;
+}
+
+.navbar-mobile .dropdown:focus-within .dropdown-content {
+    display: block; /* Show dropdown when focused */
+}
+
+.navbar-mobile .dropdown-divider {
+    border-bottom: 1px solid #3c4450;
+    margin: 5px 0;
+}
+
+/* Game Banner Section */
+.game-banner {
+    position: relative;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.banner-image:hover img {
+    opacity: 0.3; /* Reduce image opacity on hover */
+}
+
+.banner-image:hover .banner-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.banner-overlay h2 {
+    font-size: 28px;
+    color: #66c0f4;
+    margin-bottom: 10px;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+    margin: 1px;
+    text-align: justify;
+    padding-right: 40px;
+    line-height: 40px;
+}
+
+/* Responsive Design for Banner Overlay */
+@media (max-width: 720px) {
+    .banner-overlay {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .banner-overlay h2 {
+        font-size: 24px; /* Reduce heading size for smaller screens */
+    }
+
+    .banner-overlay p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        line-height: 24px; /* Reduce line height for better readability */
+        padding-right: 20px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-overlay h2 {
+        font-size: 20px; /* Further reduce heading size for very small screens */
+    }
+
+    .banner-overlay p {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        line-height: 20px; /* Further reduce line height for very small screens */
+        padding-right: 10px; /* Further reduce padding for very small screens */
+    }
+}
+
+/* Game Screenshots Section */
+.screenshots-section {
+    padding: 20px;
+    background-color: #1a1f2b;
+    margin-top: 20px;
+}
+
+.screenshots-section h2 {
+    color: #66c0f4;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 screenshots per row */
+    gap: 20px; /* Space between screenshots */
+}
+
+.screenshot-item {
+    background-color: #1b2838;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.screenshot-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.screenshot-item:hover img {
+    opacity: 0.8; /* Reduce image opacity on hover */
+}
+
+/* Responsive Design for Screenshots Section */
+@media (max-width: 720px) {
+    .screenshot-grid {
+        grid-template-columns: 1fr; /* 1 screenshot per row on smaller screens */
+    }
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1b2838;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #66c0f4;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #c6d4df;
+    font-size: 14px;
+}
+
+.footer-links {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+    color: #c6d4df;
+    font-size: 16px;
+}
+
+.footer-links a {
+    display: block;
+    color: #ffffff;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #66c0f4;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 720px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        background-color: #171a21;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sign-up-btn {
+        margin-top: 10px;
+    }
+
+    .game-grid {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .game-card {
+        width: 180px;
+    }
+
+    .large-game-grid {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .large-game-card {
+        width: 250px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo-text {
+        font-size: 24px;
+    }
+
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Additional Media Queries for Specific Mobile Devices */
+@media (max-width: 390px) {
+    .navbar-mobile .nav-links {
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 8px; /* Slightly smaller font size */
+        padding: 6px; /* Reduce padding */
+    }
+
+    .game-card {
+        width: 160px; /* Adjust card width for smaller screens */
+    }
+
+    .large-game-card {
+        width: 220px; /* Adjust card width for smaller screens */
+    }
+
+    .footer-logo-text {
+        font-size: 22px; /* Slightly smaller logo text */
+    }
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-mobile .nav-links {
+        gap: 12px; /* Further reduce gap for 375px screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 7px; /* Smaller font size */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .game-card {
+        width: 150px; /* Adjust card width for 375px screens */
+    }
+
+    .large-game-card {
+        width: 200px; /* Adjust card width for 375px screens */
+    }
+
+    .footer-logo-text {
+        font-size: 20px; /* Smaller logo text */
+    }
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-mobile .nav-links {
+        gap: 10px; /* Minimal gap for 360px screens */
+    }
+
+    .navbar-mobile a {
+        font-size: 6px; /* Smallest font size */
+        padding: 4px; /* Minimal padding */
+    }
+
+    .game-card {
+        width: 140px; /* Adjust card width for 360px screens */
+    }
+
+    .large-game-card {
+        width: 180px; /* Adjust card width for 360px screens */
+    }
+
+    .footer-logo-text {
+        font-size: 18px; /* Smallest logo text */
+    }
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
